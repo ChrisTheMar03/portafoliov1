@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    
+    <header class="cabecera">
+        <nav class="container">
+            <h1 class="titulo" id="titulo">ChrisTheMar</h1>
+            <div class="navegacion-items">
+                <a onclick="activeLink(event)" href="#">Inicio</a>
+                <a onclick="activeLink(event)" href="#sobremi">Sobre Mi</a>
+                <a onclick="activeLink(event)" href="#habilidades">Habilidades</a>
+                <a onclick="activeLink(event)" href="#contacto">Contacto</a>
+            </div>
+        </nav>
+        <nav class="container-phone">
+            <div class="phone-nav">
+                <h1>ChrisTheMar</h1>
+                <div><img id="togle-menu-item" width="28px" src="src/img/menu-icon.svg" alt=""></div>
+            </div>
+            <div class="menu-items ocultomenu" id="menu-phone">
+                <a onclick="activeLink(event)" href="#" class="active">Inicio</a>
+                <a onclick="activeLink(event)" href="#sobremi">Sobre Mi</a>
+                <a onclick="activeLink(event)" href="#habilidades">Habilidades</a>
+                <a onclick="activeLink(event)" href="#contacto">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main-container">
+            <div class="img-container">
+                <img src="src/img/avataaars.svg" alt="">
+            </div>
+            <h2>Mi nombre es</h2>
+            <h3>Christopher<span class="toggle_guion">_</span></h3>
+            <!-- <h5>Desarrollador Full Stack</h5> -->
+        </section>
+        <section class="sobremi">
+            <div class="sobremi-container" id="sobremi">
+                <div class="sobremi-img">
+                    <img id="img-cv" src="src/img-cv/cvImage.jpg" alt="">
+                </div><div class="sobremi-info">
+                    <h2>Hola</h2>
+                    <p>Soy estudiante de la carrera de desarrollo de Sistemas de la información en Instituto Superior IDAT, en cual voy
+                        cursando el sexto ciclo.</p>
+                    <p>Tengo gran capacidad para aprender y adaptarme, además de ser un buen líder a la
+                        hora de trabajar en equipo, lo que más me identifica es mi gran capacidad de resolver cualquier problema que
+                        surja buscando siempre la solución.</p>
+                    <p>Algunos de mis hobbies es leer, escuchar musica y mas que todo programar</p>
+                </div>
+            </div>
+        </section>
+        <section class="habilidades" id="habilidades">
+            <div class="habilidades-container">
+                <div class="habilidades-container-item">
+                    <h4>Front-end</h4>
+                    <img src="src/img/frontend.png" alt="">
+                    <ul class="habilidades-list">
+                        <li class="habilidades-item">HTML <span class="badge-item-avanzado">Avanzado</span></li>
+                        <li class="habilidades-item">CSS <span class="badge-item-intermedio">Intermedio</span></li>
+                        <li class="habilidades-item">JavaScript<span class="badge-item-basico">Basico</span> 
+                            <ul class="habilidades-sublist">
+                                <li class="habilidades-item">React<span class="badge-item-basico">Basico</span></li>
+                                <li class="habilidades-item">Angular<span class="badge-item-basico">Basico</span></li>
+                            </ul>
+                        </li>
+                        <li class="habilidades-item">Bootstrap<span class="badge-item-basico">Basico</span></li>
+                    </ul>
+                </div>
+                <div class="habilidades-container-item">
+                    <h4>Back-end</h4>
+                    <img src="src/img/backend.png" alt="">
+                    <ul class="habilidades-list">
+                        <li class="habilidades-item">Java
+                            <ul class="habilidades-sublist">
+                                <li class="habilidades-item">Spring Boot<span class="badge-item-basico">Basico</span></li>
+                            </ul>
+                        </li>
+                        <li class="habilidades-item">Node
+                            <ul class="habilidades-sublist">
+                                <li class="habilidades-item">Express<span class="badge-item-basico">Basico</span></li>
+                            </ul>
+                        </li>
+                        <li class="habilidades-item">Databases
+                            <ul class="habilidades-sublist">
+                                <li class="habilidades-item">Mysql<span class="badge-item-intermedio">Intermedio</span></li>
+                                <li class="habilidades-item">SQL Server<span class="badge-item-intermedio">Intermedio</span></li>
+                                <li class="habilidades-item">MongoDB<span class="badge-item-basico">Basico</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="habilidades-container-item">
+                    <h4>Otros</h4>
+                    <img src="src/img/github.png" alt="">
+                    <ul class="habilidades-list">
+                        <li class="habilidades-item">Git<span class="badge-item-intermedio">Intermedio</span></li>
+                        <li class="habilidades-item">GitHub<span class="badge-item-intermedio">Intermedio</span></li>
+                        <li class="habilidades-item">Metodologias
+                            <ul class="habilidades-sublist">
+                                <li class="habilidades-item">Scrum<span class="badge-item-intermedio">Intermedio</span></li>
+                                <li class="habilidades-item">Kanban<span class="badge-item-intermedio">Intermedio</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="contacto" id="contacto">
+            <div class="contacto-container">
+                <form class="contacto-form" action="">
+                    <div class="form-group">
+                        <label for="">Nombre completo</label>
+                        <input type="text">
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Correo</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Movil</label>
+                        <input type="number">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Comentario</label>
+                        <textarea name="" id="" rows="5">
+
+                        </textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-item">
+                    <h3>Ubicacion</h3>
+                    <p>Lima - Peru <span><img src="src/img/peru.png" alt=""></span> </p>
+                </div>
+                <div class="footer-item">
+                    <h3>Redes</h3>
+                    <div class="footer-redes">
+                         <a href="https://www.facebook.com/ChrisTheMar" class="footer-redes-item"><img src="src/img/facebook.svg" alt=""></a>
+                         <a href="https://twitter.com/ChrisTheMar" class="footer-redes-item"><img src="src/img/twitter.svg" alt=""></a>
+                         <a href="https://www.linkedin.com/in/christhemar" class="footer-redes-item"><img src="src/img/linkedin.svg" alt=""></a>
+                         <a href="https://github.com/ChrisTheMar03" class="footer-redes-item"><img src="src/img/github.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <h3>Sobre</h3>
+                    <p>Desarrollador informatico Junior</p>
+                </div>
+            </div>
+            <h6>&copy; Copyright - ChrisTheMar / 2022</h6>
+        </footer>
+    </main>
+
+    
+    <script text="text/javascript" src="scripts/script.js"></script>
+
+</body>
+</html>
