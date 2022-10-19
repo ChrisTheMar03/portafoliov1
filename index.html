@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ChrisTheMar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/alerta.css">
 </head>
 <body>
     
@@ -118,25 +119,28 @@
         </section>
         <section class="contacto" id="contacto">
             <div class="contacto-container">
-                <form class="contacto-form" action="">
+                <form class="contacto-form" onsubmit="enviarDatos(event)" action="">
                     <div class="form-group">
                         <label for="">Nombre completo</label>
-                        <input type="text">
+                        <input type="text" name="nombre">
                         <span class="error"></span>
                     </div>
                     <div class="form-group">
                         <label for="">Correo</label>
-                        <input type="text">
+                        <input type="email" name="correo">
+                        <span class="error"></span>
                     </div>
                     <div class="form-group">
                         <label for="">Movil</label>
-                        <input type="number">
+                        <input type="number" minlength="0" min="0" name="movil">
+                        <span class="error"></span>
                     </div>
                     <div class="form-group">
-                        <label for="">Comentario</label>
-                        <textarea name="" id="" rows="5">
-
+                        <label for="">Comentario (Opcional)</label>
+                        <textarea name="comentario" id="" rows="5">
+                            
                         </textarea>
+                        <span class="error"></span>
                     </div>
                     <div class="form-group">
                         <button type="submit">Enviar</button>
